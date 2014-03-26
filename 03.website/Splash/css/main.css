@@ -36,6 +36,7 @@ LEFT DIV
 
 #wrapper {
   margin-top:50px;
+  min-height:500px;
 }
 
 
@@ -43,6 +44,10 @@ LEFT DIV
   margin-top:20px;
   /*max-width:90em;
 */
+}
+
+#save_row form {
+  text-align: center;
 }
 
 #save_date p {
@@ -70,6 +75,7 @@ LEFT DIV
 margin: 0 auto;
 border-bottom:#f2b321 solid 6px;
 margin-top:50px;
+float:none;
 }
 
 /****************************************
@@ -160,6 +166,34 @@ color: #ef5b88;
     display:none;
   }
 
+/****************************************
+
+Footer
+
+****************************************/
+
+footer {
+  background-color:#fff;
+
+
+  width:100%;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom:0px;
+    width: 344px;
+margin: 0 auto;
+
+
+}
+
+footer ul li {
+    display:inline-block;
+    padding-top: 10px;
+padding-bottom: 10px;
+
+}
 
 /****************************************
 
