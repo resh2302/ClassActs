@@ -73,7 +73,8 @@ LEFT DIV
   width: 76%;
 
 margin: 0 auto;
-border-bottom:#f2b321 solid 6px;
+/*border-bottom:#f2b321 solid 6px;*/
+border-bottom:#B14E13 solid 6px;
 margin-top:50px;
 float:none;
 }
@@ -84,7 +85,7 @@ RIGTH DIV
 
 ****************************************/
 
-h1 {
+h1,h2 {
   color:#fff;
 }
 
@@ -140,9 +141,14 @@ padding-top: 9px;
 padding-bottom: 6px;
 color: #fff;
 border: 0px;
-border-bottom: #f2b321 solid 6px;
+border-bottom:#B14E13 solid 6px;
+/*border-bottom: #f2b321 solid 6px;*/
 font-size: 16px;
 float:right;
+}
+
+input[type="submit"]:hover, #save_button:hover{
+  background-color: #E96A1F;
 }
 
 #textform {
