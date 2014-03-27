@@ -141,11 +141,11 @@ font-family: 'Roboto', sans-serif;
 input[type="text"]{
   display:inline;
   width: 80%;
-  background-color:#282828;
+/*  background-color:#282828;*/
   border:none;
-  -moz-box-shadow:    inset 0 0 5px #000333;
+/*  -moz-box-shadow:    inset 0 0 5px #000333;
    -webkit-box-shadow: inset 0 0 5px #000333;
-   box-shadow:         inset 0 0 5px #000333;
+   box-shadow:         inset 0 0 5px #000333;*/
    text-align: center;
    height: 42px;
 
