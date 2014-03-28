@@ -15,7 +15,7 @@
             stroke-dashoffset: 2000;
             animation: dash 1.3s linear;
             animation-delay: 5.5s;
-            //opacity: 0;
+            /*opacity: 0;*/
            /*Reshma here is an issue because if opacity: 0 then
            at the begining of the animation whon show but then 
            it will hide again.... in the other file is working, 
@@ -40,12 +40,12 @@
         stroke-dashoffset: 500;
         animation: dash1 1.3s linear forwards;
         animation-delay: 3s;
-        //position: fixed;  
+      /*  //position: fixed;  
         opacity: 0;
         //display:none;
         //animation-duration: 1s;
         //-webkit-animation-duration:1s;
-       
+       */
         }
         
        @keyframes dash1 {
@@ -64,7 +64,7 @@
         stroke-dashoffset: 500;
         animation: dash2 1s linear forwards;
         animation-delay: 2s;
-        opacity: 0;
+        /*opacity: 0;*/
  
        
         }
@@ -103,12 +103,12 @@
         stroke-dasharray: 1800;
         stroke-dashoffset: 500;
         animation: dash4 1.3s linear forwards;
-        //animation-delay: 3s;
+      /*  //animation-delay: 3s;
         opacity: 0;
         //display:none;
         //animation-duration: 1s;
         //-webkit-animation-duration:1s;
-       
+       */
         }
         
        @keyframes dash4 {
