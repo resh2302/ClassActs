@@ -1,7 +1,17 @@
 
 body {
-  background-color:#333333;
+  /*background-color:#333333;*/
+  background-color:#FFFFFF;
   color:#fff;
+}
+
+/****************************************
+LOGO - ANIMATION
+
+****************************************/
+
+.blue, .pink, .black, .green, .orange{
+  display: none;
 }
 
 /****************************************
