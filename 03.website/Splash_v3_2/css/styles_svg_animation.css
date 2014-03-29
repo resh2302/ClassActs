@@ -7,6 +7,7 @@
             position: relative;
             top:-369px;
             right: -235px;
+          
         }
         
         .black{
@@ -14,7 +15,7 @@
             stroke-dashoffset: 2000;
             animation: dash 1.3s linear;
             animation-delay: 5.5s;
-            /*opacity: 0;*/
+            //opacity: 0;
            /*Reshma here is an issue because if opacity: 0 then
            at the begining of the animation whon show but then 
            it will hide again.... in the other file is working, 
@@ -32,15 +33,6 @@
              }
         }
         
-        @-webkit-keyframes dash {
-           0% {opacity: 0;}
-           20% {opacity: 0.4;}
-           50% {opacity: 0.8;}
-           100% {opacity: 1;}
-          to {
-            stroke-dashoffset: 0;
-             }
-        }
         /*******/
         
         .green{
@@ -48,26 +40,15 @@
         stroke-dashoffset: 500;
         animation: dash1 1.3s linear forwards;
         animation-delay: 3s;
-      /*  //position: fixed;  
+        //position: fixed;  
         opacity: 0;
         //display:none;
         //animation-duration: 1s;
         //-webkit-animation-duration:1s;
-       */
+       
         }
         
        @keyframes dash1 {
-          0% {opacity: 0;}
-           20% {opacity: 0.4;}
-           50% {opacity: 0.8;}
-           100% {opacity: 1;}
-            to {
-            stroke-dashoffset: 0;
-             }
-             
-        }
-
-        @-webkit-keyframes dash1 {
           0% {opacity: 0;}
            20% {opacity: 0.4;}
            50% {opacity: 0.8;}
@@ -83,22 +64,12 @@
         stroke-dashoffset: 500;
         animation: dash2 1s linear forwards;
         animation-delay: 2s;
-        /*opacity: 0;*/
+        opacity: 0;
  
        
         }
         
        @keyframes dash2 {
-           0% {opacity: 0;}
-           20% {opacity: 0.4;}
-           50% {opacity: 0.8;}
-           100% {opacity: 1;}
-           to {
-            stroke-dashoffset: 0;
-             }
-        }
-
-        @-webkit-keyframes dash2 {
            0% {opacity: 0;}
            20% {opacity: 0.4;}
            50% {opacity: 0.8;}
@@ -127,16 +98,6 @@
             stroke-dashoffset: 0;
              }
         }
-
-        @-webkit-keyframes dash3 {
-           0% {opacity: 0;}
-           20% {opacity: 0.4;}
-           50% {opacity: 0.8;}
-           100% {opacity: 1;}
-           to {
-            stroke-dashoffset: 0;
-             }
-        }
         
         .blue{
         stroke-dasharray: 1800;
@@ -151,16 +112,6 @@
         }
         
        @keyframes dash4 {
-           0% {opacity: 0;}
-           20% {opacity: 0.4;}
-           50% {opacity: 0.8;}
-           100% {opacity: 1;}
-           to {
-            stroke-dashoffset: 0;
-             }
-        }
-
-        @-webkit-keyframes dash4 {
            0% {opacity: 0;}
            20% {opacity: 0.4;}
            50% {opacity: 0.8;}

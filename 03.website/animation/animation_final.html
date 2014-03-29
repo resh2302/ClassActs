@@ -5,10 +5,14 @@
         <title>LOGO ANIMATION.... A BIT BETTER</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        
-        <link rel="stylesheet" type="text/css" href="styles_svg_animation.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="styles_svg_animation.css"> -->
    
-        
+        <style type="text/css">
+        	.blue, .pink, .black, .green, .orange{
+        		display: none;
+        	}
+        </style>
     </head>
     <body>
         <div>
@@ -211,12 +215,17 @@
 
         <!--Reshma here is the logo with black outline for better visibility, 
         there is an other version without it, file name:classActs.png ...-->
-        <div class="name">
+        <!-- <div class="name">
             <img src="classActs1.png" width="130">
-        </div>
+        </div> -->
         
 </div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			 $('.blue').fadeIn(1000);
 
+		});
+	</script>
 
     </body>
 </html>
