@@ -38,7 +38,9 @@ LOGO - ANIMATION
 HEADER
 
 ****************************************/
-
+#secondScreen{
+  overflow-x: hidden;
+}
 
 
 header {
