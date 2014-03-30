@@ -416,12 +416,12 @@ and open the template in the editor.
               // animateSquiggly('g#CLASS_ACTS path');
             },25500);
 
-            // setTimeout(function(){
-            //   $('#firstScreen').fadeOut(2000, function(){
-            //     $('body').css("background-color","#333333");
-            //       $('#secondScreen').fadeIn(5000);
-            //   });
-            // },29000);
+            setTimeout(function(){
+              $('#firstScreen').fadeOut(2000, function(){
+                $('body').css("background-color","#333333");
+                  $('#secondScreen').fadeIn(5000);
+              });
+            },29000);
           
             //countdown        
             // dateVar = new Date(2014, 4, 14);
