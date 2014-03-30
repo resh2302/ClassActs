@@ -25,11 +25,12 @@ LOGO - ANIMATION
   display: none;
   position: absolute;
   top: 65%;
-  right: 5%;
+  width: 100%;
+  /*right: 5%;*/
 }
 
 #colorMsg{
-  width: 70%;
+  width: 25%;
 }
 
 /****************************************
