@@ -1,26 +1,33 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Class Acts</title>
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <title>LOGO ANIMATION.... A BIT BETTER</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles_svg_animation.css" /> -->
+        <script type="text/javascript" src="js/vendor/modernizr.js"></script>
+        <style type="text/css">
+          .blue, .pink, .black, .green, .orange{
+            display: none;
+          }
+        </style>
+    </head>
+    <body>
+        <div>
+            
+           <div class="wraper">
+       
+                
+   <!-- Playing with the viewpoint values we can stretch or shrink the SVG  
+   Where <min-x> and <min-y> define the origin of the viewBox within the parent, 
+   and <width> and <height> map the area of the parent element to a coordinate 
+   system unique to the viewBox -->
    
-        <!-- Adding Font Awesome -->
-
-    <link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link href="css/mb-comingsoon.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles_svg_animation.css" /> -->
-
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-    <div id="firstScreen">
-      <svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid meet">
+    <!--BLUE PATH-->
+        <svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid meet">
              
         <!--BLUE PATH-->      
         <path class="blue" fill="none"  stroke="#008ECA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="
@@ -207,183 +214,70 @@
          <!-- CLASS ACTS -->
 
         </svg>
-    </div> <!-- firstScreen -->
-    <div id="secondScreen">
-
-      <header>
-        <div class="row" id="header_row">
-          <div class="left" id="logo_wrapper" >
-            <img src="img/logo2.png" alt="Class Acts Logo" id="logo" > 
-          </div> <!-- end logo_wrapper -->
-          <div class="right">
-            <ul class="right social">
-                <li><i class="fa fa-facebook-square fa-3x"></i></li>
-
-                <li><i class="fa fa-twitter fa-3x"></i></li>
-
-                <li><i class="fa fa-pinterest fa-3x"></i></li>
-            </ul><!-- end social -->
-            
-          </div><!-- end right -->
-
-        </div> <!-- end row -->
-       
-
-      </header>
-
-      <div id="wrapper">
-
-    
-        <div class="row" id="save_row">
-            <div class="medium-4 small-12 columns" id="save_date">
-              <p class="save_big">SAVE</p>
-              <p id="save_small">THE</p>
-              <p class="save_big">DATE</p>
-              
-              <div id="register">
-
-                <form id="register_form">
-                  <input type="text" name="textform" id="textform" placeholder="Enter Email Address">
-                  <input type="submit" name="regsterBtn" value="Register!" >
-                </form>
-
-            </div> <!-- end register -->
+        </div>
            
-            </div> <!-- end save_date -->
-            <div class="medium-8 small-12 columns" id="countdown">
-              <h1>COUNTDOWN!</h1>
 
+        <!--Reshma here is the logo with black outline for better visibility, 
+        there is an other version without it, file name:classActs.png ...-->
+        <!-- <div class="name">
+            <img src="classActs1.png" width="130">
+        </div> -->
+        
+</div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.blue').show();
+      animateSquiggly('path.blue');
 
-              <div class="row centered text-center" id="caCountdown"></div>
-              
+      setTimeout(function(){
+        $('.orange').show();
+        animateSquiggly('path.orange');
+      },2500);
+        
+        // $('.blue').fadeIn(500,function(){
+      setTimeout(function(){
+        $('.green').show();
+        animateSquiggly('path.green');
+      },4500);
 
-
-
-
-              
-              <div id="event_detail">
-                <ul id="event_list">
-                  <li>
-                  Wednesday
-                  </li>  
-                  <li>
-                    May
-                  </li>
-                  <li>
-                   14
-                  </li>
-                  <li>
-                    2014
-                  </li>
-                  <li>
-                    4-8pm 
-                  </li>
-                </ul>
-            </div> <!-- end event_detail -->
-           
-          </div>
-          <div id="bottom_social_wrap" class="row">
-
-            <ul class="right socialB" class="small-12 column">
-              <li><i class="fa fa-facebook-square fa-3x"></i></li>
-
-              <li><i class="fa fa-twitter fa-3x"></i></li>
-
-              <li><i class="fa fa-pinterest fa-3x"></i></li>
-            </ul>
-
-          </div> <!-- end bottom_social_wrap -->
-
-     </div> <!-- end row -->
- </div><!-- end wrapper -->
-
-
-     <footer>
-      <div>
-      <ul>
-        <li><img src="img/humber2.png" alt="Humber Logo" id="logo" ></li>
-        <li><img src="img/cbc2.png" alt="CBC Logo" id="logo" ></li>
-      </ul>
-    </div>
-     </footer>
- 
-  </div><!--  secondScreen -->  
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-
-
-    <script src="js/foundation.min.js"></script>
-    <script src="js/jquery.mb-comingsoon.min.js"></script> 
-    
-    <script>
-        if (typeof jQuery == 'undefined') {
-            document.write(unescape("%3Cscript src='js/jquery-1.11.0.js' type='text/javascript'%3E%3C/script%3E"));
-        }
-        $(document).ready(function () {
-
-            $(document).foundation();
-            // logo animation
-            $('.blue').show();
-            animateSquiggly('path.blue');
-
-            setTimeout(function(){
-              $('.orange').show();
-              animateSquiggly('path.orange');
-            },2500);
-              
-              // $('.blue').fadeIn(500,function(){
-            setTimeout(function(){
-              $('.green').show();
-              animateSquiggly('path.green');
-            },4500);
-
-            setTimeout(function(){
-              $('.pink').show();
-              animateSquiggly('path.pink');
-            },6500);
-                
-            setTimeout(function(){
-              $('.black').show();
-              animateSquiggly('path.black');
-            },9000);
-
-            setTimeout(function(){
-              $('.name').fadeIn(2000);
-            },10000);
-
-            //first to second screen transition
-            $('#firstScreen').fadeOut(21000, function(){
-                  $('body').css("background-color","#333333");
-                  $('#secondScreen').fadeIn(8000);
-            });
+      setTimeout(function(){
+        $('.pink').show();
+        animateSquiggly('path.pink');
+      },6500);
           
-            //countdown        
-            dateVar = new Date(2014, 4, 14);
-            $('#caCountdown').mbComingsoon(dateVar);            
-        });
+      setTimeout(function(){
+        $('.black').show();
+        animateSquiggly('path.black');
+      },9000);
 
-        // function for animation
-        function animateSquiggly(pathClass){
-          var path = document.querySelector(pathClass);
-              var length = path.getTotalLength();
-              // Clear any previous transition
-              path.style.transition = path.style.WebkitTransition =
-                'none';
-              path.style.MozTransition = 'none';
-              // Set up the starting positions
-              path.style.strokeDasharray = length + ' ' + length;
-              path.style.strokeDashoffset = length;
-              // Trigger a layout so styles are calculated & the browser
-              // picks up the starting position before animating
-              path.getBoundingClientRect();
-              // Define our transition
-              path.style.transition = path.style.WebkitTransition =
-                'stroke-dashoffset 2s ease-in-out';
-              path.style.MozTransition =
-                'stroke-width 2s, stroke-dashoffset 2s, stroke-dasharray 2s';
-              // Go!
-              path.style.strokeDashoffset = '0';
-        }
-    </script> 
-  
-  </body>
+      setTimeout(function(){
+        $('.name').fadeIn(2000);
+      },10000);
+                 
+    });
+
+    function animateSquiggly(pathClass){
+      var path = document.querySelector(pathClass);
+          var length = path.getTotalLength();
+          // Clear any previous transition
+          path.style.transition = path.style.WebkitTransition =
+            'none';
+          path.style.MozTransition = 'none';
+          // Set up the starting positions
+          path.style.strokeDasharray = length + ' ' + length;
+          path.style.strokeDashoffset = length;
+          // Trigger a layout so styles are calculated & the browser
+          // picks up the starting position before animating
+          path.getBoundingClientRect();
+          // Define our transition
+          path.style.transition = path.style.WebkitTransition =
+            'stroke-dashoffset 2s ease-in-out';
+          path.style.MozTransition =
+            'stroke-width 2s, stroke-dashoffset 2s, stroke-dasharray 2s';
+          // Go!
+          path.style.strokeDashoffset = '0';
+    }
+  </script>
+
+    </body>
 </html>
