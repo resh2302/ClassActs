@@ -9,6 +9,11 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+    <link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href="css/mb-comingsoon.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     
 
@@ -356,7 +361,7 @@ and open the template in the editor.
        
         $(document).ready(function () {
 
-            // $(document).foundation();
+            $(document).foundation();
             // logo animation
             setTimeout(function(){
               $('.blue').show();
@@ -424,8 +429,8 @@ and open the template in the editor.
             },29000);
           
             //countdown        
-            // dateVar = new Date(2014, 4, 14);
-            // $('#caCountdown').mbComingsoon(dateVar);            
+            dateVar = new Date(2014, 4, 14);
+            $('#caCountdown').mbComingsoon(dateVar);            
         });
 
         // function for animation
