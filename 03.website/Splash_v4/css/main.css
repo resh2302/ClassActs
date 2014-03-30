@@ -3,7 +3,7 @@ body {
   /*background-color:#333333;*/
   background-color:#FFFFFF;
   color:#fff;
-
+  overflow: hidden;
 }
 
 
@@ -31,11 +31,13 @@ object#objCA{
 
 #colorMsgWrapper{
   display: none;
-  /*width: 500px;*/
+  position: absolute;
+  top: 50%;
+  right: 5%;
 }
 
 #colorMsg{
-  width: 50%;
+  width: 70%;
 }
 
 /****************************************
@@ -265,6 +267,10 @@ COUNTDOWN
   font-size:8em;
 }
 
+.counter-block:nth-child(4){
+  margin-right: 0;
+}
+
 /****************************************
 
 Footer
@@ -294,6 +300,10 @@ padding-bottom: 10px;
 
 }
 
+#footerLogos img{
+  width: 75%;
+}
+
 /****************************************
 
 Media Query
@@ -302,7 +312,7 @@ Media Query
 
 @media (max-width: 1024px) {
    object#objCA{
-    top: 9%;
+    top: 10%;
    }
   .counter-block .counter {
     width:155px;
@@ -324,7 +334,7 @@ Media Query
 @media (max-width: 768px) {
   
   object#objCA{
-    top : 9%;
+    top : 10%;
   }
   #event_list li {
     font-size: 1.4rem;
@@ -379,7 +389,7 @@ Media Query
 @media (max-width: 480px) {
 
   object#objCA{
-    top: 10%;
+    top: 5%;
   }
   
   .social {
@@ -472,10 +482,9 @@ Media Query
 
 }
 
-@media (max-width: 320px) {
-  
+@media (max-width: 320px) {  
   object#objCA{
-    top : 24%;
+    top : 22%;
   }
 
   #save_button { 

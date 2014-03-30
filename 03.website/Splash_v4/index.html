@@ -349,10 +349,10 @@
 
      <footer>
       <div>
-      <ul>
-        <li><img src="img/humber2.png" alt="Humber Logo" id="humberLogo" ></li>
-        <li><img src="img/cbc2.png" alt="CBC Logo" id="cbcLogo" ></li>
-      </ul>
+        <ul id="footerLogos">
+          <li><img src="img/humber2.png" alt="Humber Logo" id="humberLogo" ></li>
+          <li><img src="img/cbc2.png" alt="CBC Logo" id="cbcLogo" ></li>
+        </ul>
     </div>
      </footer>
  
@@ -420,12 +420,18 @@
             },23000);
 
             setTimeout(function(){
-              $('#colorMsg').attr("src","img/we_are.png");
+              $('#colorMsg').attr("src","img/we_are_rm.png");
               $("#colorMsgWrapper").fadeIn(1500);              
             },25500);
 
+            setTimeout(function(){
+              $('#firstScreen').fadeOut(2000, function(){
+                $('body').css("background-color","#333333");
+                  $('#secondScreen').fadeIn(5000);
+              });
+            },29000);
             //first to second screen transition
-            // $('#firstScreen').fadeOut(21000, function(){
+            // $('#firstScreen').fadeOut(55000, function(){
             //       $('body').css("background-color","#333333");
             //       $('#secondScreen').fadeIn(8000);
             // });
