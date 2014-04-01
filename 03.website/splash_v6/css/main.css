@@ -1,7 +1,16 @@
 
+html.no-svg #firstScreen{
+  display: none;
+}
+
+html.no-svg #noSVGscreen{
+  display: block;
+  width: 100%;
+}
+
 body {
   color:#fff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 
@@ -10,6 +19,9 @@ body {
 LOGO - ANIMATION
 
 ****************************************/
+#noSVGscreen{
+  display: none;
+}
 #firstScreen{
   max-height: 500px;
 }
@@ -289,14 +301,19 @@ Footer
 footer {
   background-color:#fff;
 
-
+  color: #000;
   width:100%;
+}
+
+footer .row{
+  width: 83.5rem;
+  margin-left: 335px;
 }
 
 footer ul {
     list-style-type: none;
     margin-bottom:0px;
-    width: 344px;
+    width: 500px;
 margin: 0 auto;
 
 
@@ -309,10 +326,17 @@ padding-bottom: 10px;
 
 }
 
-#footerLogos img{
-  width: 75%;
+#footerLogos div{
+  width: 80%;
 }
 
+#footerLogos div img#humberLogo{
+    width: 179px;
+  }
+  #footerLogos div img#cbcLogo{
+    width: 67px;
+  }
+ 
 /****************************************
 
 Media Query
@@ -386,20 +410,25 @@ Media Query
   .counter-block .counter-caption {
     margin-top:10px;
   }  
+  footer .row{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+
+  }
+
+  
+  #footerLogos div{
+    width: 100%;
+  }
+
+  
 }
 
-@media (max-width: 640px) {
-  
-  object#objCA{
-    top: 17%;    
-  }
-}
+
 
 @media (max-width: 480px) {
 
-  object#objCA{
-    top: 5%;
-  }
   
   .social {
     display:none;
@@ -496,6 +525,15 @@ Media Query
   #event_detail {
     margin-top: 40px;
   }
+  footer .row{
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footerLogos div{
+    width: 100%;
+  }
 
 }
 
@@ -528,8 +566,14 @@ Media Query
     width:64px;
   }
 
-  footer img {
-    width:60%;
+ 
+  footer .row{
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
   }
-  
+
+  #footerLogos div{
+    width: 100%;
+  }
 }

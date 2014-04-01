@@ -17,10 +17,15 @@ and open the template in the editor.
     <link rel="stylesheet" href="css/foundation.css" />
     <link href="css/mb-comingsoon.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vendor/modernizr.js"></script>
+
 
 
 </head>
 <body>
+    <div id="noSVGscreen">
+        <img src="img/logo_classActs.png" alt="ClASS ACTS LOGO" />
+    </div>
     <div id="firstScreen">
 
               <center>
@@ -267,7 +272,7 @@ and open the template in the editor.
         <header>
             <div class="row" id="header_row">
                 <div class="left" id="logo_wrapper">
-                    <img src="img/logo_classActs_story.png" alt="Class Acts Logo" id="logo" width="80%">
+                    <img src="img/logo_classActs.png" alt="Class Acts Logo" id="logo" width="66%">
                 </div>
                 <!-- end logo_wrapper -->
                 <div class="right">
@@ -281,7 +286,11 @@ and open the template in the editor.
                             </a>
                         </li>
 
-                        <li><i class="fa fa-pinterest fa-3x"></i></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-pinterest fa-3x"></i>
+                            </a>
+                        </li>
                     </ul>
                     <!-- end social -->
 
@@ -365,14 +374,29 @@ and open the template in the editor.
 
 
         <footer>
-            <div>
-                <ul id="footerLogos">
-                    <li>
-                        <img src="img/humber2.png" alt="Humber Logo" id="humberLogo"></li>
-                    <li>
-                        <img src="img/cbc2.png" alt="CBC Logo" id="cbcLogo"></li>
-                </ul>
-            </div>
+            <!-- <div class="row"> -->
+                
+                <div >
+                    <ul id="footerLogos" class="row">
+
+                        <li class="large-4 medium-4 small-12">
+                            <div>
+                                <img src="img/humber2.png" alt="Humber Logo" id="humberLogo">
+                            </div>
+                        </li>
+                        <li  class="large-3 medium-3 small-12">
+                            <div>
+                                <span>&copy; Copyright2014</span>                                  
+                            </div>
+                        </li>
+                        <li  class="large-4 medium-4 small-12">
+                            <div>
+                                <img src="img/cbc2.png" alt="CBC Logo" id="cbcLogo">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <!-- </div> -->
         </footer>
 
     </div>
@@ -443,18 +467,29 @@ and open the template in the editor.
             }, 23000);
 
             setTimeout(function () {
+                var wrapperStyles = {
+                  right: "-21%",
+                  top: "-9%"
+                };
+                $('#colorMsgWrapper').css(wrapperStyles);
+                $('svg').css("margin-bottom","-119px");
+                
                 $('#colorMsg').attr("src", "img/we_are_514px.png");
                 $("#colorMsgWrapper").fadeIn(1500);
             }, 25500);
 
             setTimeout(function () {
                 $('#CLASS_ACTS').fadeIn(1500);
-                // animateSquiggly('g#CLASS_ACTS path');
             }, 25500);
 
             setTimeout(function () {
                 $('#firstScreen').fadeOut(2000, function () {
-                    $('body').css("background-image", "url('img/greyGradient.jpg')");
+                    var bodyStyles = {
+                        "overflow" : "auto",
+                        "overflow-x" : "hidden",
+                        "background-image" : "url('img/greyGradient.jpg')"
+                    }
+                    $('body').css(bodyStyles);
                     $('#secondScreen').fadeIn(5000);
                 });
             }, 29000);
