@@ -21,7 +21,7 @@ LOGO - ANIMATION
 
 #colorMsgWrapper{
   display: none;
-  position: absolute;
+  position: relative;
   top: 65%;
   width: 100%;
   /*right: 5%;*/
