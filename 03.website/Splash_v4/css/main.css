@@ -334,7 +334,7 @@ Media Query
 @media (max-width: 768px) {
   
   object#objCA{
-    top : 10%;
+    top : 18%;
   }
   #event_list li {
     font-size: 1.4rem;
@@ -481,6 +481,17 @@ Media Query
   }
 
 }
+
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+   object#objCA{
+    top : 14%;
+  }
+
+}*/
 
 @media (max-width: 320px) {  
   object#objCA{
