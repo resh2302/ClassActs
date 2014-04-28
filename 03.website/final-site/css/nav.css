@@ -5,14 +5,14 @@
 }
 
 
-#navigationMenu li{
+#navigationMenu li, #horizontalMenu li{
 	list-style:none;
 	height:39px;
 	padding:2px;
 	width:40px;
 }
 
-#navigationMenu span{
+#navigationMenu span, #horizontalMenu span, #horizontalMenu div{
 	/* Container properties */
 	width:0;
 	left:38px;
@@ -36,7 +36,7 @@
 	transition: 0.25s;
 }
 
-#navigationMenu a{
+#navigationMenu a, #horizontalMenu a{
 	background:url('../img/navigation.jpg') no-repeat;
 
 	height:39px;
@@ -47,8 +47,12 @@
 
 /* General hover styles */
 
-#navigationMenu a:hover span{ width:auto; padding:0 20px;overflow:visible; }
-#navigationMenu a:hover{
+#navigationMenu a:hover span, #horizontalMenu a:hover span, #horizontalMenu a:hover div
+{ width:auto; 
+  padding:0 20px;
+  overflow:visible; 
+}
+#navigationMenu a:hover, #horizontalMenu a:hover{
 	text-decoration:none;
 	
 	/* CSS outer glow with the box-shadow property */
@@ -59,9 +63,9 @@
 
 /* Green Button */
 
-#navigationMenu .home {	background-position:0 0;}
-#navigationMenu .home:hover {	background-position:0 -39px;}
-#navigationMenu .home span{
+#navigationMenu .home, #horizontalMenu .home {	background-position:0 0;}
+#navigationMenu .home:hover, #horizontalMenu .home:hover {	background-position:0 -39px;}
+#navigationMenu .home span, #horizontalMenu .home span{
 	background-color:#7da315;
 	color:#3d4f0c;
 	text-shadow:1px 1px 0 #99bf31;
@@ -69,9 +73,9 @@
 
 /* Blue Button */
 
-#navigationMenu .about { background-position:-38px 0;}
-#navigationMenu .about:hover { background-position:-38px -39px;}
-#navigationMenu .about span{
+#navigationMenu .about, #horizontalMenu .about { background-position:-38px 0;}
+#navigationMenu .about:hover, #horizontalMenu .about:hover { background-position:-38px -39px;}
+#navigationMenu .about span, #horizontalMenu .about span{
 	background-color:#1e8bb4;
 	color:#223a44;
 	text-shadow:1px 1px 0 #44a8d0;
@@ -79,9 +83,9 @@
 
 /* Orange Button */
 
-#navigationMenu .services { background-position:-76px 0;}
-#navigationMenu .services:hover { background-position:-76px -39px;}
-#navigationMenu .services span{
+#navigationMenu .services, #horizontalMenu .services { background-position:-76px 0;}
+#navigationMenu .services:hover, #horizontalMenu .services:hover  { background-position:-76px -39px;}
+#navigationMenu .services span, #horizontalMenu .services span{
 	background-color:#c86c1f;
 	color:#5a3517;
 	text-shadow:1px 1px 0 #d28344;
@@ -89,19 +93,20 @@
 
 /* Yellow Button */
 
-#navigationMenu .portfolio { background-position:-114px 0;}
-#navigationMenu .portfolio:hover{ background-position:-114px -39px;}
-#navigationMenu .portfolio span{
+#navigationMenu .portfolio, #horizontalMenu .portfolio { background-position:-114px 0;}
+#navigationMenu .portfolio:hover, #horizontalMenu .portfolio:hover{ background-position:-114px -39px; width: inherit;}
+#navigationMenu .portfolio span, #horizontalMenu .portfolio span, #navigationMenu .portfolio div{
 	background-color:#d0a525;
 	color:#604e18;
 	text-shadow:1px 1px 0 #d8b54b;
+        
 }
 
 /* Purple Button */
 
-#navigationMenu .contact { background-position:-152px 0;}
-#navigationMenu .contact:hover { background-position:-152px -39px;}
-#navigationMenu .contact span{
+#navigationMenu .contact, #horizontalMenu .contact { background-position:-152px 0;}
+#navigationMenu .contact:hover, #horizontalMenu .contact:hover { background-position:-152px -39px;}
+#navigationMenu .contact span, #horizontalMenu .contact span{
 	background-color:#af1e83;
 	color:#460f35;
 	text-shadow:1px 1px 0 #d244a6;
@@ -152,4 +157,21 @@ p.note{
 	font-size:10px;
 	text-align:center;
 	margin:50px;
+}
+
+
+
+
+#horizontalMenu li, #horizontalMenuWrap li{
+    display: inline;
+}
+
+
+#horizontalMenu, #horizontalMenuWrap{
+    list-style: none;
+    display: inline-flex;
+}
+
+#horizontalMenu a:hover div{
+    height: 50px;
 }
