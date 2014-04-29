@@ -216,13 +216,8 @@ text-align:left;
   text-align:left;
   color:#fff;
  white-space:normal;
- /*padding-top: 20px;*/
- 
-}
+ padding-top: 20px;
 
-.program_des .label{
-    width: 48%;
- text-align: center;
 }
 
 .label p{
@@ -249,19 +244,16 @@ text-align:left;
   margin-left: 10px;*/
   overflow: hidden;
   background-color: #303030;
-  z-index: 3; 
-  width: 50%;
-  display: inline-table;
-}
+  z-index: 3; }
 
 /* line 23, album.scss */
 .crop img {
   position: absolute;
   top: 0;
   left: 0;
-  /*width:auto;*/
+  width:auto;
   display:block;
-  width: 100%;
+
  
  min-height: 100%; 
 
@@ -381,6 +373,7 @@ Detail
 
 
 
+
 #iM li:hover{
    background-color:rgba(0,0,0,0.5);
 
@@ -430,6 +423,12 @@ width:310px;
 
   box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,1);
 }
+
+
+.hidden {
+    display: none;
+}
+
 
 
 
