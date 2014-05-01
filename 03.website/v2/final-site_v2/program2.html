@@ -1,333 +1,542 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Class Acts</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class Acts</title>
 
-   
+
         <!-- Adding Font Awesome -->
 
-    <link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link href="css/mb-comingsoon.min.css" rel="stylesheet" />
-     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/main.css" />
+        <link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link href="css/mb-comingsoon.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/main.css" />
 
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-   
-      <header>
-        <div class="row" id="header_row">
-          <div class="left" id="logo_wrapper" >
-           <!--  <img src="img/logo2.png" alt="Class Acts Logo" id="logo" >  -->
-            <img src="img/logo.png" alt="Class Acts Logo" id="logo" > 
-          </div> <!-- end logo_wrapper -->
-          <div class="right">
-            <ul class="right social">
-                <li><i class="fa fa-facebook-square fa-2x"></i></li>
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
 
-                <li><i class="fa fa-twitter fa-2x"></i></li>
+        <header>
+            <div class="row" id="header_row">
+                <div class="left" id="logo_wrapper" >
+                    <!--  <img src="img/logo2.png" alt="Class Acts Logo" id="logo" >  -->
+                    <img src="img/logo.png" alt="Class Acts Logo" id="logo" > 
+                </div> <!-- end logo_wrapper -->
+                <div class="right">
+                    <ul class="right social">
+                        <li><i class="fa fa-facebook-square fa-2x"></i></li>
 
-                <li><i class="fa fa-pinterest fa-2x"></i></li>
-            </ul><!-- end social -->
-            
-          </div><!-- end right -->
+                        <li><i class="fa fa-twitter fa-2x"></i></li>
 
-        </div> <!-- end row -->
-       
+                        <li><i class="fa fa-pinterest fa-2x"></i></li>
+                    </ul><!-- end social -->
 
-      </header>
+                </div><!-- end right -->
 
-      <div id="wrapper">
-        
-        
-      <!--   <div id="main" class="left small-1 collumns">
+            </div> <!-- end row -->
 
 
+        </header>
 
-         <ul class="dropdown">
+        <div id="wrapper">
 
-          <li class="main_li"><a href="#">Test</a>
+            <div id="program-content">
+                <div class="row" id="mainMenu">
+                    <div class="large-4 small-12 columns">
+                        <div id="mainHorizontal">
+                            <span id="horMenuBars" class="fa fa-bars"></span>
+                            <div id="r_horizontalMenuWrap">
+                                <div class="menuIcon" >
+                                    <div id="r_IT" class="iconImg"></div>
+                                    <div class="iconTxt r_ITtxt">
+                                        <div>IT</div>
+                                    </div>
+                                </div>
+                                <div class="menuIcon" >
+                                    <div id="r_media"class="iconImg" ></div>
+                                    <div class="iconTxt r_mediatxt">
+                                        <div>MEDIA</div>
+                                    </div>
+                                </div>
+                                <div class="menuIcon" >
+                                    <div id="r_art" class="iconImg"></div>
+                                    <div class="iconTxt r_arttxt">
+                                        <div>ART</div>
+                                    </div>
+                                </div>
+                                <div class="menuIcon" >
+                                    <div id="r_about" class="iconImg"></div>
+                                    <div class="iconTxt r_abouttxt">
+                                        <div>ABOUT</div>
+                                    </div>
+                                </div>
+                                <div class="menuIcon" >
+                                    <div id="r_contact" class="iconImg"></div>
+                                    <div class="iconTxt r_ontacttxt">
+                                        <div>CONTACT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-8 small-12 columns">
+                        <nav class="top-bar" data-topbar>
+                            <ul class="title-area">
+                                <li class="name">
+                                    <h1></h1>
+                                </li>
+                                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                            </ul>
 
-            <ul id="navigationMenu" class="sub_menu">
-              
-                <li>
-                  <a class="home" href="#">
-                        <span>IT</span>
-                    </a>
-                </li>
-                
-                <li>
-                  <a class="about" href="#">
-                        <span>MEDIA</span>
-                    </a>
-                </li>
-                
-                <li>
-                   <a class="services" href="#">
-                        <span>ART</span>
-                     </a>
-                </li>
-                
-                <li>
-                  <a class="portfolio" href="#">
-                        <span>ABOUT</span>
-                    </a>
-                </li>
-                
-                <li>
-                  <a class="contact" href="#">
-                        <span>CONTACT</span>
-                    </a>
-                </li>
-            </ul>
-          </li>
-        </ul> <!-- end dropdown -->
-                
-   <!--      </div><!-- main --> 
-      
-        <div id="program-content">
-          <nav class="top-bar" data-topbar>
-          <ul class="title-area">
-            <li class="name">
-              <h1></h1>
-            </li>
-             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-          </ul>
+                            <section class="top-bar-section">
+                                <!-- Right Nav Section -->
+                                <ul class="right portfolioFilter">
 
-          <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right portfolioFilter">
+                                    <!--  <li><a href="#" data-filter="*" class="current">ALL</a></li> -->
+                                    <li><a href="#" data-filter=".it" class="current">INFORMATION TECHNOLOGY</a></li>
+                                    <li><a href="#" data-filter=".media">MEDIA</a></li>
+                                    <li><a href="#" data-filter=".art">ARTS</a></li>
 
-                 <!--  <li><a href="#" data-filter="*" class="current">ALL</a></li> -->
-                  <li><a href="#" data-filter=".it">INFORMATION TECHNOLOGY</a></li>
-                  <li class="current"><a href="#" data-filter=".media">MEDIA</a></li>
-                  <li><a href="#" data-filter=".art">ART</a></li>
-                
-             
-            </ul>
 
-            
-          </section>
-        </nav>
+                                </ul>
 
-        <div class="portfolioContainer">
 
-        
-          
-          <div class="it row">
-          
-
-            
-
-            <div class="program_brief medium-12 large-2 columns">
-             
-                <div class="label">
-                  <h4><span>We are</span> <br/>Art Students</h4>
-                  <p>
-                    <span>
-                    Photo booth lo-fi direct trade wayfarers. Polaroid distillery irony disrupt. Paleo seitan blog PBR&B. Wayfarers sustainable Pitchfork, forage deep v Truffaut small batch iPhone.
-                  </span>
-                  </p>
-
+                            </section>
+                        </nav>
+                    </div>  
                 </div>
-             
-            </div> 
-            <div class="program_des medium-12 large-5 columns">
-              <a href="#">
-              <div class="crop">
-             <img src="img/wine.jpg" alt="image">
-           </div> <!-- end crop -->
-             <!--  <div class="label_wrapper">
-              <div class= "label_tab"> -->
-              <div class="label">
-                <h5 class="g_name">Group Name</h5>
-                <br/>
-                <p class="p_name">Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
+                <div class="portfolioContainer">
 
-                </p>
-                <p class="p_view">
-                  <b>VIEW OUR WORK HERE</b>
-                </p>
-              </div>
-              <span class="red-overlay"></span>
-            </a>
-             <!--  </div>  --><!-- end label_tab -->
-            <!-- </div> --><!-- end label_wrapper -->
-            </div> 
-             <div class="program_des medium-12 large-5 columns">
-              <a href="#">
-               <div class="crop">
-                <img src="img/watch.jpg" alt="image">
-              </div> <!-- end crop -->
-             
-              <div class="label">
-                <h5 class="g_name">Group Name</h5>
-                <br/>
-                <p class="p_name">Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
+                    <div class="it row">
 
-                </p>
-                <p class="p_view">
-                  <b>VIEW OUR WORK HERE</b>
-                </p>
-              </div>
-              <span class="red-overlay"></span>
-            </a>
-            
-            </div> 
-            <div class="program_des medium-12 large-5 columns">
-              <a href="#">
+                        <div class="program_brief medium-12 large-2 columns">
 
-               <div class="label">
-                <h5 class="g_name">Group Name</h5>
-                <br/>
-                <p class="p_name">Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
+                            <div class="label">
+                                <!--<h4><span>We are</span> <br/>IT Students</h4>-->
+                                <h4>Our IT Programs</h4>
 
-                </p>
-                <p class="p_view">
-                  <b>VIEW OUR WORK HERE</b>
-                </p>
-              </div>
-                <div class="crop right">
-                <img src="img/trees.jpg" alt="image">
-              </div> <!-- end crop -->
-              <span class="red-overlay"></span>
-            </a>
+                                <p>
+                                    <span>
+                                        Photo booth lo-fi direct trade wayfarers. Polaroid distillery irony disrupt. Paleo seitan blog PBR&B. Wayfarers sustainable Pitchfork, forage deep v Truffaut small batch iPhone.
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+                                <div class="crop">
+                                    <img src="img/wine.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+
+                            </a>
+                            <!--  </div>  --><!-- end label_tab -->
+                            <!-- </div> --><!-- end label_wrapper -->
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+                                <div class="crop">
+                                    <img src="img/watch.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+
+                            </a>
+
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+                                <div class="crop right">
+                                    <img src="img/trees.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                            </a>
 
 
+                        </div>
+
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+                                <div class="crop right">
+                                    <img src="img/subway.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                            </a>
+
+                        </div>
+
+
+
+
+
+
+
+                        <!--  <img src="img/surf.jpg" alt="image"> -->
+                    </div> <!--  end IT row -->
+
+                    <div class="media">
+                        <div class="program_brief medium-12 large-2 columns">
+
+                            <div class="label">
+                                <!--<h4><span>We are</span> <br/>IT Students</h4>-->
+                                <h4>Our MEDIA Programs</h4>
+
+                                <p>
+                                    <span>
+                                        Photo booth lo-fi direct trade wayfarers. Polaroid distillery irony disrupt. Paleo seitan blog PBR&B. Wayfarers sustainable Pitchfork, forage deep v Truffaut small batch iPhone.
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+                                <div class="crop">
+                                    <img src="img/wine.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+
+                            </a>
+                            <!--  </div>  --><!-- end label_tab -->
+                            <!-- </div> --><!-- end label_wrapper -->
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+                                <div class="crop">
+                                    <img src="img/watch.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+
+                            </a>
+
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+                                <div class="crop right">
+                                    <img src="img/trees.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                            </a>
+
+
+                        </div>
+
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+                                <div class="crop right">
+                                    <img src="img/subway.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                            </a>
+
+                        </div>
+                    </div> <!-- end media-->
+
+                    <div class="art">
+                        <div class="program_brief medium-12 large-2 columns">
+
+                            <div class="label">
+                                <!--<h4><span>We are</span> <br/>IT Students</h4>-->
+                                <h4>Our ARTS Programs</h4>
+
+                                <p>
+                                    <span>
+                                        Photo booth lo-fi direct trade wayfarers. Polaroid distillery irony disrupt. Paleo seitan blog PBR&B. Wayfarers sustainable Pitchfork, forage deep v Truffaut small batch iPhone.
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+                                <div class="crop">
+                                    <img src="img/wine.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+
+                            </a>
+                            <!--  </div>  --><!-- end label_tab -->
+                            <!-- </div> --><!-- end label_wrapper -->
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+                                <div class="crop">
+                                    <img src="img/watch.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+
+                            </a>
+
+                        </div> 
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+                                <div class="crop right">
+                                    <img src="img/trees.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                            </a>
+
+
+                        </div>
+
+                        <div class="program_des medium-12 large-5 columns">
+                            <a href="#">
+
+                                <div class="label">
+                                    <h5 class="g_name">Group Name</h5>
+                                    <br/>
+                                    <p class="p_name">Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+                                        Program Name<br/>
+
+                                    </p>
+                                    <p class="p_view">
+                                        <b>VIEW OUR WORK HERE</b>
+                                    </p>
+                                </div>
+                                <div class="crop right">
+                                    <img src="img/subway.jpg" alt="image">
+                                </div> <!-- end crop -->
+
+                            </a>
+
+                        </div>
+                    </div> <!-- end ARTS -->
+
+
+
+                </div> <!-- end portfolioContainer -->
+
+
+            </div><!-- program-content -->
+
+
+
+        </div><!-- end wrapper -->
+
+        <footer>
+            <div>
+                <ul>
+                    <li><img src="img/humber2.png" alt="Humber Logo" id="logo" ></li>
+                    <li><img src="img/cbc2.png" alt="CBC Logo" id="logo" ></li>
+                </ul>
             </div>
-
-             <div class="program_des medium-12 large-5 columns">
-              <a href="#">
-
-               <div class="label">
-                <h5 class="g_name">Group Name</h5>
-                <br/>
-                <p class="p_name">Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
-                  Program Name<br/>
-
-                </p>
-                <p class="p_view">
-                  <b>VIEW OUR WORK HERE</b>
-                </p>
-              </div>
-                <div class="crop right">
-                <img src="img/subway.jpg" alt="image">
-              </div> <!-- end crop -->
-               <span class="red-overlay"></span>
-            </a>
-
-            </div>
+        </footer>
 
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
+
+        <script src="js/jquery.isotope.js" type="text/javascript"></script> 
+
+        <script type="text/javascript">
+
+            $(window).load(function() {
+                var $container = $('.portfolioContainer');
+                $container.isotope({
+                    filter: '.it',
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false
+                    }
+                });
+
+                $('.portfolioFilter a').click(function() {
+
+                    //for a tag
+                    $('.portfolioFilter a.current').removeClass('current');
+                    $(this).addClass('current');
+
+                    // for li tag
+//                    $('.portfolioFilter li.current').removeClass('current');
+//                    $(this).parent().addClass('current');
+
+                    var selector = $(this).attr('data-filter');
+                    $container.isotope({
+                        filter: selector,
+                        animationOptions: {
+                            duration: 750,
+                            easing: 'linear',
+                            queue: false
+                        }
+                    });
+                    return false;
+                });
+            });
+
+        </script>
 
 
 
 
-
-           <!--  <img src="img/surf.jpg" alt="image"> -->
-          </div> <!--  end row -->
-
-          <div class="media">
-            <img src="img/burger.jpg" alt="image">
-          </div>
-          
-          <div class="art">
-            <img src="img/subway.jpg" alt="image">
-          </div>
-
-          
-          
-        </div> <!-- end portfolioContainer -->
-          
-
-        </div><!-- program-content -->
-
-     
-   
-      </div><!-- end wrapper -->
-
-     <footer>
-      <div>
-      <ul>
-        <li><img src="img/humber2.png" alt="Humber Logo" id="logo" ></li>
-        <li><img src="img/cbc2.png" alt="CBC Logo" id="logo" ></li>
-      </ul>
-    </div>
-     </footer>
- 
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-      <script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
-
-      <script src="js/jquery.isotope.js" type="text/javascript"></script> 
-
-      <script type="text/javascript">
-
-$(window).load(function(){
-    var $container = $('.portfolioContainer');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
- 
-    $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
+        <script src="js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='js/jquery-1.11.0.js' type='text/javascript'%3E%3C/script%3E"));
             }
-         });
-         return false;
-    }); 
-});
+        </script> 
+        <script type="text/javascript" src="js/main.js"></script>
 
-</script>
- 
-
-
-
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script>
-        if (typeof jQuery == 'undefined') {
-            document.write(unescape("%3Cscript src='js/jquery-1.11.0.js' type='text/javascript'%3E%3C/script%3E"));
-        }
-    </script> 
-    <script src="js/jquery.mb-comingsoon.min.js"></script> 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            dateVar = new Date(2014, 4, 14);
-            $('#caCountdown').mbComingsoon(dateVar);            
-        });
-    </script>
-  </body>
+    </body>
 </html>
