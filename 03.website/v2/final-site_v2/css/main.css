@@ -968,6 +968,10 @@ body{
 }
 
 @media (max-width: 480px) {
+
+  header{
+    padding-bottom: 20px;
+  }
   
  /* .social {
 
