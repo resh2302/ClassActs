@@ -12,6 +12,11 @@ body {
  
 }
 
+
+.row{
+  max-width:81.5rem;
+}
+
 .portfolioContainer .row{
 
 max-width: 100%;
@@ -21,6 +26,8 @@ max-width: 100%;
 
 max-width: 100%;
 }
+
+
 
 /****************************************
 
@@ -220,6 +227,13 @@ Program
 
 }
 
+.program_des .label{
+    width: 48%;
+ text-align: center;
+}
+
+
+
 .program_brief .label{
   white-space: normal;
 padding: 28px;
@@ -231,12 +245,15 @@ text-align:left;
   text-align:left;
   color:#fff;
  white-space:normal;
- padding-top: 20px;
+/* padding-top: 20px;*/
 
 }
 
 .label p{
   font-size:12px;
+   z-index: 3; 
+  width: 50%;
+  display: inline-table;
 
 }
 
@@ -266,8 +283,9 @@ text-align:left;
   position: absolute;
   top: 0;
   left: 0;
-  width:auto;
+ /* width:auto;*/
   display:block;
+   width: 100%;
 
  
  min-height: 100%; 
