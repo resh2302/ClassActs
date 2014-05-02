@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.maphilight.js"></script>
+<script type="text/javascript" src="js/popover.js"></script>
+
+<link rel="stylesheet" href="css/styles_map.css">
+
+<!--======== map-highlight function ========= -->
+
+<script type="text/javascript">
+    $(function() {
+    $('.map').maphilight();
+    });
+</script>
+
+</head>
+
+
+<body onload="resettoggle(),resettoggle2(),resettoggle3()">
+    
+
+    
+<!--======== show and hide function ========= --> 
+
+    <script type="text/javascript">
+<!--
+    function resettoggle() {
+    var e = document.getElementById('prog');
+    e.style.display = 'none';
+    }
+    
+    function resettoggle2() {
+    var e = document.getElementById('prog2');
+    e.style.display = 'none';
+    }
+    
+     function resettoggle3() {
+    var e = document.getElementById('prog3');
+    e.style.display = 'none';
+    }
+
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
+</script>
+
+    
+<div class="header1">
+        <div class="class-logo">
+            <img src="img/logo.png" alt="Class Acts Logo">
+        </div>
+    
+        <div class="cbc-logo">
+            <img src="img/cbc_white.png" alt="CBC Logo">
+        </div>
+         
+</div>
+
+
+
+<div class="wraper1">
+         <img src="img/map-final2.jpg"  usemap="#Map" class="map" />
+         
+            <map name="Map">
+            <area shape="poly" coords="540,318,416,362,412,354,409,348,407,340,405,331,404,323,405,312,406,302,410,292,412,285,531,282,531,294,533,304,535,311"
+                href="#" data-maphilight='{"strokeColor":"E0DF85","strokeWidth":2,"fillColor":"E0DF85","fillOpacity":1}' onmouseover="toggle_visibility('prog');" onclick="toggle_visibility('prog');">
+            <area shape="poly" coords="541,317,416,361,425,375,438,388,449,398,460,407,468,413,480,421,491,426,501,433,600,360,588,355,575,349,564,342,552,331,545,324" 
+                href="#" data-maphilight='{"strokeColor":"e2d900","strokeWidth":2,"fillColor":"e2d900","fillOpacity":1}' onmouseover="toggle_visibility('prog');">
+            <area shape="poly" coords="677,377,664,375,652,374,637,371,625,367,611,363,599,359,501,432,512,437,526,442,537,446,549,449,567,454,580,457,592,460,607,462,622,464,635,466,648,467,667,468"
+                href="#" data-maphilight='{"strokeColor":"b2c852","strokeWidth":2,"fillColor":"b2c852","fillOpacity":1}' onmouseover="toggle_visibility('prog');">
+            <area shape="poly" coords="758,374,809,457,791,460,768,464,747,466,727,467,706,468,686,468,667,468,676,376,700,378,726,377,742,376"
+                href="#" data-maphilight='{"strokeColor":"80a64f","strokeWidth":2,"fillColor":"80a64f","fillOpacity":1}' onmouseover="toggle_visibility('prog');">
+
+            <area shape="poly" coords="758,374,808,457,826,453,845,449,863,443,879,438,896,431,912,423,927,416,936,411,847,348,827,358,807,364,785,369,769,373" 
+                href="#" data-maphilight='{"strokeColor":"0091a5","strokeWidth":2,"fillColor":"0091a5","fillOpacity":1}' onmouseover="toggle_visibility('prog2');">
+            <area shape="poly" coords="904,294,1013,335,1005,349,994,364,981,378,968,389,957,397,944,406,935,411,847,348,862,340,874,332,885,322,895,311,901,302"
+                  href="#" data-maphilight='{"strokeColor":"54b79f","strokeWidth":2,"fillColor":"54b79f","fillOpacity":1}' onmouseover="toggle_visibility('prog2');">
+            <area shape="poly" coords="899,248,1003,247,1010,258,1016,271,1019,286,1021,299,1019,315,1015,327,1013,335,904,294,907,286,909,275,906,264,903,255" 
+                  href="#" data-maphilight='{"strokeColor":"94cfb6","strokeWidth":2,"fillColor":"94cfb6","fillOpacity":1}' onmouseover="toggle_visibility('prog2');">
+
+            <area shape="poly" coords="659,316,647,314,634,309,623,304,614,299,608,294,541,317,547,327,556,335,565,343,578,350,588,355,600,360"
+                  href="#" data-maphilight='{"strokeColor":"ec7559","strokeWidth":2,"fillColor":"ec7559","fillOpacity":1}' onmouseover="toggle_visibility('prog3');">
+            <area shape="poly" coords="780,304,845,348,832,355,815,361,797,366,783,369,767,372,750,374,735,376,713,377,695,377,677,376,667,375,653,374,636,370,621,365,608,362,600,359,658,316,675,319,698,320,722,320,743,317,765,311"
+                  href="#" data-maphilight='{"strokeColor":"e64154","strokeWidth":2,"fillColor":"e64154","fillOpacity":1}' onmouseover="toggle_visibility('prog3');" >
+            <area shape="poly" coords="820,262,904,294,899,305,891,315,883,323,873,332,860,341,847,348,780,303,793,298,805,290,812,282,818,273"
+                  href="#" data-maphilight='{"strokeColor":"ef8983","strokeWidth":2,"fillColor":"ef8983","fillOpacity":1}' onmouseover="toggle_visibility('prog3');">
+            </map>
+         
+
+        <div class="box">
+
+                    <div class="programs1 pop" id="prog">
+                        <ul class="ul-block">
+                            <li class="ligth-yellow"><a href="#">Interactive Media</a></li>
+                            <li class="yellow"><a href="#">Software Development</a></li>
+                            <li class="ligth-green"><a href="#">Public Relations</a></li>
+                            <li class="green"><a href="#">Media Communications</a></li>
+                        </ul>
+                    </div>
+    
+                   <div class="programs2 pop" id="prog2">
+                        <ul class="ul-block">
+                            <li class="blue"><a href="#">Radio</a></li>
+                            <li class="turquoise"><a href="#">Graphic Design</a></li>
+                            <li class="ligth-turquoise"><a href="#">Advertising</a></li>
+                        </ul>
+                    </div>
+ 
+                   <div class="programs3 pop" id="prog3">
+                        <ul class="ul-block">
+                            <li class="pink"><a href="#">Journalism</a></li>
+                            <li class="fussia"><a href="#">Visual Arts</a></li>
+                            <li class="orange"><a href="#">Film & Video</a></li>
+                        </ul>
+                </div>
+
+      </div>
+        
+        
+</div>
+
+  
+</body>
+</html>
