@@ -181,6 +181,7 @@ Program
     margin-right: 10px; 
   color:#666;
   text-decoration:none;
+  height: 48px;
 }
 
 .portfolioFilter a.current { 
@@ -769,16 +770,22 @@ Horizontal Nav
 }
 
 #r_horizontalMenuWrap{
-    display: none;
+    /*display: none;*/
     height: 50px;
 }
 
 
 .menuIcon {
-    display: inline-block;
+    display: inline-flex;
     //height: 50px;
     //width: 50px;
     float: left;
+}
+
+.menuIcon a{
+  color: #fff;
+  text-decoration: none;
+  display: inherit;
 }
 .iconTxt{
     display: inline-block;
@@ -847,6 +854,12 @@ Horizontal Nav
 
 .iconTxt{
     //display: none;
+}
+
+#menuName{
+  line-height: 50px;
+  text-align: center;
+  /*width: 25px;*/
 }
 
 /****************************************
