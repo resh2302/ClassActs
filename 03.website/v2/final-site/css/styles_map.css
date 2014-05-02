@@ -44,6 +44,10 @@ margin:1% 5% 2% 0;
     display: list-item;
 }
 
+.pop{
+    display: none;
+}
+
 .programs1{
     z-index: 5;
     /*position: relative;
@@ -52,7 +56,7 @@ margin:1% 5% 2% 0;
     width: 200px;
     color: #222222;
     opacity: 1;
-    float: left;
+    /*float: left;*/
     //display: none;
     //text-shadow:1px 1px #222222;
     
@@ -91,7 +95,7 @@ margin:1% 5% 2% 0;
     width: 200px;
     color: #fff;
     opacity: 1;
-    float: left;
+    /*float: left;*/
     
 }
 
@@ -127,7 +131,7 @@ margin:1% 5% 2% 0;
     width: 200px;
     color: #fff;
     opacity: 1;
-    float: left;
+    /*float: left;*/
     
 }
 
