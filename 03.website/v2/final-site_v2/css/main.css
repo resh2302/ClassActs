@@ -57,7 +57,7 @@ color:#fff;
 header ul {
     list-style-type: none;
     margin-bottom:0px;
-    width: 344px;
+   /* width: 344px;*/
 margin: 0 auto;
 
 
@@ -172,7 +172,7 @@ Program
 }
 
 .top-bar-section li:not(.has-form) a:not(.button){
-  padding: 0 53px;
+  padding: 0 31px;
   font-size:16px;
   background-color:#1a1a1a;
 }
@@ -529,7 +529,8 @@ max-width: 83.5rem;
 
  #logo_wrapper{
    
-    margin-left:41px;
+    margin-left:0px;
+    margin-top: 8px;
    /* padding: 30px;
    */
   }
@@ -699,12 +700,28 @@ Horizontal Nav
 
 ****************************************/
 
+#program_info{
+  margin-top:60px;
+}
+
+#program_nav{
+  padding-left:0px;
+}
+
 #mainMenu{
     min-height: 55px;
+
 }
 
 #horMenuBars{
     float: left;
+    background:url('../img/design-4.png') no-repeat;
+    background-position: 0px 0px;
+    display: inline-block;
+    height: 48px;
+   width: 50px;
+    float: left;
+   
 }
 
 #r_horizontalMenuWrap{
@@ -730,50 +747,58 @@ Horizontal Nav
 }
 
 .iconImg{
-    background:url('../img/design-3.png') no-repeat;
-    height: 50px;
+    background:url('../img/design-4.png') no-repeat;
+    height: 48px;
     width: 50px;
     display: inline-block;
 }
 
-#r_IT{
-    background-position: 0px 0px;
-}
-
-#r_IT:hover{
-    background-position: 0px -50px;
-}
-
-#r_media{
+#r_Home{
     background-position: -50px 0px;
 }
 
-#r_media:hover{
+#r_Home:hover{
     background-position: -50px -50px;
 }
 
-#r_art{
+#r_IT{
     background-position: -100px 0px;
 }
 
-#r_art:hover{
+#r_IT:hover{
     background-position: -100px -50px;
 }
 
-#r_about{
+#r_media{
     background-position: -150px 0px;
 }
 
-#r_about:hover{
+#r_media:hover{
     background-position: -150px -50px;
 }
 
+#r_art{
+     background-position: -200px 0px;
+}
+
+#r_art:hover{
+    background-position: -200px -50px;
+}
+
+#r_about{
+    background-position: -250px 0px;
+}
+
+#r_about:hover{
+    background-position: -250px -50px;
+}
+
 #r_contact{
-    background-position: -200px 0px;
+    background-position: -300px 0px;
 }
 
 #r_contact:hover{
-    background-position: -200px -50px;
+    background-position: -300px -50px;
 }
 
 .iconTxt{
