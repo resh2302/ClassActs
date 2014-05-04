@@ -45,3 +45,46 @@ $('.iconImg').mouseover(function(){
 $('.iconImg').mouseout(function(){
 	$('#menuName').fadeOut();
 });
+
+//function to get querystring
+
+function getQueryVariable(variable)
+{
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) {
+            return pair[1];
+        }
+    }
+    return(false);
+}
+
+//isotope change
+function isoChange(obj)
+{
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '.it',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+    
+    $('.portfolioFilter a.current').removeClass('current');
+        $(obj).addClass('current');
+
+        var selector = $(obj).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        return false;
+}

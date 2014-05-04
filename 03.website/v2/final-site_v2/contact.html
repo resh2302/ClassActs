@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ClassActs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/contact.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div>Locate US</div>
+        <div>
+            <a href="#" class="get-directions" target="blank">Give me directions to CBC Atrium Toronto</a>
+        </div>
+        <div class="no-geolocation">
+            <p class="warning">Your browser does not support Geolocation. Please enter your postcode and click the button again.</p>
+            <input type="text" placeholder="Enter postcode or address" class="manual-location">
+        </div>
+        <div id="map-canvas">
+            
+        </div>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
+        <script>
+            $(document).ready(function() {
+                getMap();
+                var startingLocation;
+                var destination = "CBC+Shop,+250+Front+St+W,"; // replace this with any destination
+
+                $('a.get-directions').click(function() {
+                    
+                    // check if browser supports geolocation
+                    if (navigator.geolocation) {
+
+                        // get user's current position
+                        navigator.geolocation.getCurrentPosition(function(position) {
+
+                            // get latitude and longitude
+                            var latitude = position.coords.latitude;
+                            var longitude = position.coords.longitude;
+                            startingLocation = latitude + "," + longitude;
+
+                            // send starting location and destination to goToGoogleMaps function
+                            goToGoogleMaps(startingLocation, destination);
+
+                        });
+
+                    }
+                });
+            });
+
+            // go to Google Maps function - takes a starting location and destination and sends the query to Google Maps
+            function goToGoogleMaps(startingLocation, destination) {
+                window.location = "https://maps.google.co.uk/maps?saddr=" + startingLocation + "&daddr=" + destination;
+            }
+            
+            function getMap() {
+                var myLatlng = new google.maps.LatLng(43.644326, -79.387687);
+                var mapOptions = {
+                    zoom: 17,
+                    center: myLatlng
+                }
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+                marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: 'Main map'
+                });
+            }
+        </script>
+    </body>
+</html>

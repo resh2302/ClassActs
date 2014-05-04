@@ -780,6 +780,7 @@ Horizontal Nav
     //height: 50px;
     //width: 50px;
     float: left;
+    cursor: pointer;
 }
 
 .menuIcon a{
