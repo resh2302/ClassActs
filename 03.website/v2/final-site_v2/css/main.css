@@ -161,6 +161,87 @@ background-position: 0px -50px;
 }
 
 /****************************************
+
+About
+
+****************************************/
+
+#about_content h1{
+  text-align:left;
+  font-size: 30px;
+}
+
+#about_des{
+  background-color:rgba(255,255,255, 0.1);
+  padding-right: 50px;
+  padding-left:50px;
+  padding-bottom:50px;
+  margin-top:50px;
+}
+
+#about_content p{
+  font-weight: lighter;
+  letter-spacing:1px;
+  
+
+}
+
+
+.about_rainbow{
+ /* text-align:center;*/
+  font-size:18px;
+  padding-top:10px;
+  padding-left:20px;
+  padding-bottom:10px;
+  text-shadow: 2px 2px rgba(3,3,3, 0.1);
+  margin-bottom:18px;
+ /* font-weight: lighter;*/
+  letter-spacing:1px
+}
+
+#about_im{
+  background-color:#E0DF85;
+}
+
+#about_sd{
+  background-color:#E2D900;
+}
+
+#about_pr{
+  background-color:#B2C852;
+}
+
+#about_mc{
+  background-color:#80A64F;
+}
+
+#about_r{
+  background-color:#0091A5;
+}
+#about_gd{
+  background-color:#54B79F; 
+}
+
+#about_adv{
+
+  background-color:#94CFB6; 
+
+}
+
+#about_j{
+  background-color:#EF8983;
+}
+
+#about_va{
+  background-color:#E64154;
+}
+
+#about_fv{
+  background-color:#EC7559;
+}
+
+
+/****************************************
 Program 
 
 ****************************************/
