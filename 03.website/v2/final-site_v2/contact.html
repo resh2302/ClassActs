@@ -1,77 +1,322 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
     <head>
-        <title>ClassActs</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="css/contact.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <div>Locate US</div>
-        <div>
-            <a href="#" class="get-directions" target="blank">Give me directions to CBC Atrium Toronto</a>
-        </div>
-        <div class="no-geolocation">
-            <p class="warning">Your browser does not support Geolocation. Please enter your postcode and click the button again.</p>
-            <input type="text" placeholder="Enter postcode or address" class="manual-location">
-        </div>
-        <div id="map-canvas">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class Acts</title>
+
+
+        <!-- Adding Font Awesome -->
+
+    <link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href="css/mb-comingsoon.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+   
+      <header>
+        <div class="row" id="header_row">
+          <div class="left" id="logo_wrapper" >
+           <!--  <img src="img/logo2.png" alt="Class Acts Logo" id="logo" >  -->
+            <img src="img/logo.png" alt="Class Acts Logo" id="logo" > 
+          </div> <!-- end logo_wrapper -->
+          <div class="right show-for-medium-up" id="header_brands_wrapper" >
+            <ul id="header_brands">
+              <li><img src="img/humber2.png" alt="Humber Logo" id="logo" ></li>
+              <li><img src="img/cbc2.png" alt="CBC Logo" id="logo" ></li>
+            </ul>
+
             
-        </div>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
-        <script>
+            
+          </div><!-- end right -->
+
+        </div> <!-- end row -->
+       
+
+      </header>
+
+      <div id="wrapper" class="contact-content">
+        <div class="row" id="mainMenu">
+        <div class="small-12 columns" id="program_nav">
+                        <div id="mainHorizontal">
+                            <span id="horMenuBars"></span>
+                            <div id="r_horizontalMenuWrap">
+                                <div class="menuIcon" >
+                                    <a href="index.html">
+                                        <div id="r_Home" class="iconImg"></div>
+                                        <!-- <div class="iconTxt r_Home">
+                                            <div>Home</div>
+                                        </div> -->
+                                    </a>
+                                </div>
+                                <div class="menuIcon" >
+                                    <a href="program2.html?cat=it">
+                                        <div id="r_IT" class="iconImg"></div>
+                                        <!-- <div class="iconTxt r_ITtxt">
+                                            <div>IT</div>
+                                        </div> -->
+                                    </a>
+                                </div>
+                                <div class="menuIcon" >
+                                    <a href="program2.html?cat=media">
+                                        <div id="r_media"class="iconImg" ></div>
+                                        <!-- <div class="iconTxt r_mediatxt">
+                                            <div>MEDIA</div>
+                                        </div> -->
+                                    </a>
+                                </div>
+                                <div class="menuIcon" >
+                                    <a href="program2.html?cat=art">
+                                        <div id="r_art" class="iconImg"></div>
+                                        <!-- <div class="iconTxt r_arttxt">
+                                            <div>ART</div>
+                                        </div> -->
+                                    </a>
+                                </div>
+                                <div class="menuIcon" >
+                                    <a href="about.html">
+                                        <div id="r_about" class="iconImg"></div>
+                                        <!-- <div class="iconTxt r_abouttxt">
+                                            <div>ABOUT</div>
+                                        </div> -->
+                                    </a>
+                                </div>
+                                <div class="menuIcon" >
+                                    <a href="contact.html">
+                                        <div id="r_contact" class="iconImg"></div>
+                                        <!-- <div class="iconTxt r_ontacttxt">
+                                            <div>CONTACT</div>
+                                        </div> -->
+                                    </a>
+                                </div>
+                                <div id="menuName"></div>
+                            </div>
+                        </div>
+                    </div> 
+                  </div>
+                    <div class="row">
+                      <div class="small-12 large-6 columns">
+                        <h2>Contact Us</h2>
+                        <form>
+                          <div class="row">
+                            <div class="small-11">
+                              <div class="row">
+                                <div class="small-3 columns">
+                                  <label for="txtName" class="right">Name : </label>
+                                </div>
+                                <div class="small-9 columns">
+                                  <input type="text" id="txtName" placeholder="Enter Name">
+                                </div>
+                                <div class="small-3 columns">
+                                  <label for="txtEmail" class="right">Email : </label>
+                                </div>
+                                <div class="small-9 columns">
+                                  <input type="email" id="txtEmail" placeholder="Enter Email">
+                                </div>
+                                <div class="small-3 columns">
+                                  <label for="txtMsg" class="right">Message : </label>
+                                </div>
+                                <div class="small-9 columns">
+                                  <textarea placeholder="Enter Message here..." rows="15"></textarea>
+                                </div>
+                                <div class="small-9 offset-3 columns">
+                                  <input type="submit" id="btnSubmit" value="Send Message">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="small-12 large-6 columns">
+                        <h2>Locate Us</h2>
+                        <div id="map-canvas">
+            
+                        </div>
+                        <form action="#" onSubmit="calcRoute();return false;" id="routeForm">
+                          <label>
+                            From: 
+                            </label>
+                            <input type="text" id="routeStart" value="">
+                          
+                          <br/>
+                                <label>
+                            To: 250 Front St W,
+                Toronto, ON M5V 3G5
+                          </label>
+                          <br /><br />
+                          <label><input type="radio" name="travelMode" value="DRIVING" checked /> Driving</label>
+                          <label><input type="radio" name="travelMode" value="BICYCLING" /> Bicylcing</label>
+                          <label><input type="radio" name="travelMode" value="TRANSIT" /> Public transport</label>
+                          <label><input type="radio" name="travelMode" value="WALKING" /> Walking</label>
+                          <input type="submit" value="Calculate route">
+                        </form>
+                        <div id="directionsPanel">
+                          Enter a starting point and click "Calculate route".
+                        </div>
+                      </div>
+                    </div>
+        
+      </div><!-- end wrapper -->
+
+     <footer>
+      <div>
+
+      <ul class="social">
+                <li><i class="fa fa-facebook-square fa-2x"></i></li>
+
+                <li><i class="fa fa-twitter fa-2x"></i></li>
+
+                <li><i class="fa fa-pinterest fa-2x"></i></li>
+       </ul><!-- end social -->
+       
+      </div>
+     </footer>
+     <footer id="footer2" class="show-for-small-only" >
+      <div>
+       <ul id="header_brands">
+              <li><img src="img/humber2.png" alt="Humber Logo" id="logo" ></li>
+              <li><img src="img/cbc2.png" alt="CBC Logo" id="logo" ></li>
+      </ul>
+    </div>
+     </footer>
+ 
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
+
+
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='js/jquery-1.11.0.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script> 
+    <script>
             $(document).ready(function() {
-                getMap();
-                var startingLocation;
-                var destination = "CBC+Shop,+250+Front+St+W,"; // replace this with any destination
+                initialize();
+                var directionDisplay, map;
+                var directionsService = new google.maps.DirectionsService();
+                var geocoder = new google.maps.Geocoder();
 
-                $('a.get-directions').click(function() {
-                    
-                    // check if browser supports geolocation
-                    if (navigator.geolocation) {
 
-                        // get user's current position
-                        navigator.geolocation.getCurrentPosition(function(position) {
-
-                            // get latitude and longitude
-                            var latitude = position.coords.latitude;
-                            var longitude = position.coords.longitude;
-                            startingLocation = latitude + "," + longitude;
-
-                            // send starting location and destination to goToGoogleMaps function
-                            goToGoogleMaps(startingLocation, destination);
-
-                        });
-
-                    }
-                });
             });
+            function initialize() {
+              // set the default center of the map
+              var latlng = new google.maps.LatLng(43.644326,-79.387687);
+              // set route options (draggable means you can alter/drag the route in the map)
+              var rendererOptions = { draggable: true };
+              directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+              // set the display options for the map
+              var myOptions = {
+                zoom: 14,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                mapTypeControl: false
+              };
 
-            // go to Google Maps function - takes a starting location and destination and sends the query to Google Maps
-            function goToGoogleMaps(startingLocation, destination) {
-                window.location = "https://maps.google.co.uk/maps?saddr=" + startingLocation + "&daddr=" + destination;
-            }
-            
-            function getMap() {
-                var myLatlng = new google.maps.LatLng(43.644326, -79.387687);
-                var mapOptions = {
-                    zoom: 17,
-                    center: myLatlng
-                }
-                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-                marker = new google.maps.Marker({
-                    position: myLatlng,
+              // add the map to the map placeholder
+              map = new google.maps.Map(document.getElementById("map-canvas"),myOptions);
+              // bind the map to the directions
+              marker = new google.maps.Marker({
+                    position: latlng,
                     map: map,
                     title: 'Main map'
                 });
+              directionsDisplay.setMap(map);
+              // point the directions to the container for the direction details
+              directionsDisplay.setPanel(document.getElementById("directionsPanel"));
+              // start the geolocation API
+              if (navigator.geolocation) {
+                // when geolocation is available on your device, run this function
+                navigator.geolocation.getCurrentPosition(foundYou, notFound);
+              } else {
+                // when no geolocation is available, alert this message
+                alert('Geolocation not supported or not enabled.');
+              }
             }
-        </script>
-    </body>
+
+            function notFound(msg) {  
+              alert('Could not find your location :(')
+            }
+
+            function foundYou(position) {
+              // convert the position returned by the geolocation API to a google coordinate object
+              var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+              // then try to reverse geocode the location to return a human-readable address
+              var geocoder= new google.maps.Geocoder();
+              geocoder.geocode({'latLng': latlng}, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                  // if the geolocation was recognized and an address was found
+                  if (results[0]) {
+                    // add a marker to the map on the geolocated point
+                    marker = new google.maps.Marker({
+                        position: latlng,
+                        map: map
+                    });
+                    // compose a string with the address parts
+                    var address = results[0].address_components[1].long_name+' '+results[0].address_components[0].long_name+', '+results[0].address_components[3].long_name
+                    // set the located address to the link, show the link and add a click event handler
+                      $('#routeStart').val(address);
+                      calcRoute();
+                    
+                  }
+                } else {
+                  // if the address couldn't be determined, alert and error with the status message
+                  alert("Geocoder failed due to: " + status);
+                }
+              });
+            }
+
+            function calcRoute() {
+              // get the travelmode, startpoint and via point from the form   
+              var travelMode = $('input[name="travelMode"]:checked').val();
+              var start = $("#routeStart").val();
+              var end = "250 Front St W\, Toronto\, ON M5V 3G5";//$("#routeEnd").val();
+              var directionsService = new google.maps.DirectionsService();
+              // compose a array with options for the directions/route request
+              var request = {
+                origin: start,
+                destination: end,
+                unitSystem: google.maps.UnitSystem.IMPERIAL,
+                travelMode: google.maps.DirectionsTravelMode[travelMode]
+              };
+              // call the directions API
+              directionsService.route(request, function(response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                  // directions returned by the API, clear the directions panel before adding new directions
+                  $('#directionsPanel').empty();
+                  // display the direction details in the container
+                  directionsDisplay.setDirections(response);
+                } else {
+                  // alert an error message when the route could nog be calculated.
+                  if (status == 'ZERO_RESULTS') {
+                    alert('No route could be found between the origin and destination.');
+                  } else if (status == 'UNKNOWN_ERROR') {
+                    alert('A directions request could not be processed due to a server error. The request may succeed if you try again.');
+                  } else if (status == 'REQUEST_DENIED') {
+                    alert('This webpage is not allowed to use the directions service.');
+                  } else if (status == 'OVER_QUERY_LIMIT') {
+                    alert('The webpage has gone over the requests limit in too short a period of time.');
+                  } else if (status == 'NOT_FOUND') {
+                    alert('At least one of the origin, destination, or waypoints could not be geocoded.');
+                  } else if (status == 'INVALID_REQUEST') {
+                    alert('The DirectionsRequest provided was invalid.');         
+                  } else {
+                    alert("There was an unknown error in your request. Requeststatus: nn"+status);
+                  }
+                }
+              });
+            }
+        </script> 
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>

@@ -1,0 +1,300 @@
+body{
+    margin: 0px;
+    background-color:#222222;
+    font-family: sans-serif,'Verdana', "Arial",'Helvetica'; 
+    font-size: 1em;
+}
+
+.wraper1{
+
+}
+
+.header1{
+background-color: #000;
+height: 75px;
+}
+
+.class-logo img{
+width: 12%;
+float: left;
+margin: 1% 0 0 5%;
+
+}
+
+.cbc-logo img{
+width: 2.7%;
+float: right;
+margin:1% 5% 2% 0;
+}
+
+
+.box{
+    position: relative;
+    top:-340px;
+    left: 26%;
+}
+
+.box ul li{
+    text-decoration: none;
+    list-style-type:none;
+}
+
+
+.ul-block ul{
+    display: list-item;
+}
+
+.pop{
+    display: none;
+    width: 200px;
+    z-index: 5;
+}
+
+
+.programs1 a{
+    color: #444;
+    text-decoration: none;
+   
+}
+
+.pop a:hover{
+    font-weight: bold;
+}
+
+
+.pop li{
+    width: 100%;
+}
+
+.programs2 a{
+    color:#444;
+    text-decoration: none;
+}
+
+.pop ul li{
+    text-decoration: none;
+    list-style-type:none;
+    -webkit-box-shadow: 0px 11px 7px -4px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 11px 7px -4px rgba(0,0,0,0.44);
+    box-shadow: 0px 11px 7px -4px rgba(0,0,0,0.44);
+}
+
+
+.programs3 a{
+    color:#ccc;
+    text-decoration: none;
+}
+
+
+
+
+.light-yellow{
+    color: #222222;
+    background-color: #e0df85;
+    padding: 2% 0 2% 5%;
+}
+
+.yellow{
+    color: #222222;
+    background-color: #e2d900;
+    padding: 2% 0 2% 5%;
+}
+
+.light-green{
+    color: #fff;
+    background-color: #b2c852;  /*rgba(178, 200, 82, 1)*/
+    padding: 2% 0 2% 5%;
+    
+}
+
+.green{
+    color:#fff;
+    background-color: #80a64f;  /*rgba(128, 166, 79, 1)*/
+    padding: 2% 0 2% 5%;
+}
+
+.blue{
+    color:#fff;
+    background-color: #0c91a5;  /* rgba(12, 145, 165, 1); */
+    padding: 2% 0 2% 5%;
+}
+
+.turquoise{
+    color:#fff;
+    background-color: #54b79f;  /* rgba(84, 183, 159, 1); */
+    padding: 2% 0 2% 5%;
+}
+
+.light-turquoise{
+    color:#fff;
+    background-color: #94cfb6; /*rgba(148, 207, 182, 1)*/
+    padding: 2% 0 2% 5%;
+}
+
+.pink{
+    color:#fff;
+    background-color: #ef8983;  /* rgba(239, 137, 131, 1) */
+    padding: 2% 0 2% 5%;
+}
+
+.fussia, .hot-pink{
+    color:#fff;
+    background-color: #e64154;  /* rgba(230, 65, 84, 1) */
+    padding: 2% 0 2% 5%;
+}
+
+.orange{
+    color:#fff;
+    background-color: #ec7559;  /* rgba(236, 117, 89, 1) */
+    padding: 2% 0 2% 5%;
+}
+
+/* group 1 - Interactive Media*/
+#IMlist li:nth-child(2){
+    background-color: rgba(224,223,133,0.9);
+}
+
+#IMlist li:nth-child(3){
+    background-color: rgba(224,223,133,0.7);
+}
+
+#IMlist li:nth-child(4){
+    background-color: rgba(224,223,133,0.5);
+}
+
+/* group 2 - Software Dev */
+
+#SDlist li:nth-child(2){
+    background-color: rgba(226, 217, 0,0.8);
+}
+
+#SDlist li:nth-child(3){
+    background-color: rgba(226, 217, 0,0.6);
+}
+
+#SDlist li:nth-child(4){
+    background-color: rgba(226, 217, 0,0.4);
+}
+
+/* group 3 - Public Relations (4)*/
+
+#PRlist li:nth-child(2){
+    background: rgba(178, 200, 82, 0.9);
+}
+
+#PRlist li:nth-child(3){
+    background: rgba(178, 200, 82, 0.7);
+}
+
+#PRlist li:nth-child(4){
+    background: rgba(178, 200, 82, 0.6);
+}
+
+#PRlist li:nth-child(5){
+    background: rgba(178, 200, 82, 0.4);
+}
+
+/* group 4 - Media Communications (2) */
+
+#MClist li:nth-child(2){
+    background: rgba(128, 166, 79, 0.7);
+}
+
+#MClist li:nth-child(3){
+    background: rgba(128, 166, 79, 0.5);
+}
+
+/* group 5 - Radio (2) */
+#Rlist li:nth-child(2){
+    background: rgba(12, 145, 165, 0.8);
+}
+
+#Rlist li:nth-child(3){
+    background: rgba(12, 145, 165, 0.6);
+}
+
+/* group 6 - Graphic Design (3) */
+
+#GDlist li a{
+    color: #444;
+}
+
+#GDlist li:nth-child(2){
+    background: rgba(84, 183, 159, 0.8);
+}
+
+#GDlist li:nth-child(3){
+    background: rgba(84, 183, 159, 0.6);
+}
+
+#GDlist li:nth-child(4){
+    background: rgba(84, 183, 159, 0.4);
+}
+
+/* group 7 - Advertising (4) */
+
+#Alist li a{
+    color: #444;
+}
+
+#Alist li:nth-child(2){
+    background: rgba(148, 207, 182, 0.8);
+}
+
+#Alist li:nth-child(3){
+    background: rgba(148, 207, 182, 0.7);
+}
+
+#Alist li:nth-child(4){
+    background: rgba(148, 207, 182, 0.5);
+}
+
+#Alist li:nth-child(5){
+    background: rgba(148, 207, 182, 0.3);
+}
+
+/* group 8 - Journalism (3) */
+
+#Jlist li:nth-child(2){
+    background: rgba(239, 137, 131, 0.8);
+}
+
+#Jlist li:nth-child(3){
+    background: rgba(239, 137, 131, 0.6);
+}
+
+#Jlist li:nth-child(4){
+    background: rgba(239, 137, 131, 0.4);
+}
+
+/* group 9 - Visual Arts (3) */
+
+#VAlist li:nth-child(2){
+    background: rgba(230, 65, 84, 0.8);
+}
+
+#VAlist li:nth-child(3){
+    background: rgba(230, 65, 84, 0.6);
+}
+
+#VAlist li:nth-child(4){
+    background: rgba(230, 65, 84, 0.4);
+}
+
+/* group 10 - Film, Videography & TV (4) */
+
+#FVTlist li:nth-child(2){
+    background: rgba(236, 117, 89, 0.8);
+}
+
+#FVTlist li:nth-child(3){
+    background: rgba(236, 117, 89, 0.6);
+}
+
+#FVTlist li:nth-child(4){
+    background: rgba(236, 117, 89, 0.4);
+}
+
+#FVTlist li:nth-child(5){
+    background: rgba(236, 117, 89, 0.3);
+}

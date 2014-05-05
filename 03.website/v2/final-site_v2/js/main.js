@@ -13,31 +13,31 @@ $('#horMenuBars').click(function(){
 $('.iconImg').mouseover(function(){
    // $(this).next('.iconTxt').children('div').toggle(1000);
    if($(this).attr('id') == "r_Home"){
-   		$('#menuName').text("HOME").fadeIn();	
+   		$('#menuName').text("HOME").show();	
    }
    else if($(this).attr('id') == "r_IT")
    {
-   		$('#menuName').text("IT").fadeIn();	
+   		$('#menuName').text("IT").show();	
 
    }
    else if($(this).attr('id') == "r_media")
    {
-   		$('#menuName').text("MEDIA").fadeIn();	
+   		$('#menuName').text("MEDIA").show();	
    	
    }
    else if($(this).attr('id') == "r_art")
    {
-   		$('#menuName').text("ART").fadeIn();	
+   		$('#menuName').text("ART").show();	
    	
    }
    else if($(this).attr('id') == "r_about")
    {
-   		$('#menuName').text("ABOUT").fadeIn();	
+   		$('#menuName').text("ABOUT").show();	
    	
    }
    else if($(this).attr('id') == "r_contact")
    {
-   		$('#menuName').text("CONTACT").fadeIn();	
+   		$('#menuName').text("CONTACT").show();	
    	
    }
 });
