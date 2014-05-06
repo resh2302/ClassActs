@@ -8,6 +8,10 @@ body {
   overflow-x: hidden; 
   background:#444;
   background-image: url(../img/greyGradient.jpg);
+  background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center; 
+
  
  
 }
