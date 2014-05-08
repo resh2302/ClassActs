@@ -29,6 +29,7 @@ max-width: 100%;
 #detail-content .row{
 
 max-width: 100%;
+margin-bottom: 10px;
 }
 
 
@@ -288,6 +289,9 @@ Program
     font-weight:bold;
 }
 
+ul.portfolioFilter.medium-12{
+  width:100%;
+}
 
 .portfolioContainer img {
     margin:0px;
@@ -403,14 +407,16 @@ width: 50%;
 
  .program_des {
   background-color:#fff;
+  text-align: center;
+  text-transform: uppercase;
  }
 
  .it{
   margin-top: 50px;
  /* margin-left: 44px;*/
   position: relative;
-text-transform: uppercase;
-text-align: center;
+  text-transform: uppercase;
+  text-align: center;
  }
 
  .g_name{
@@ -488,6 +494,14 @@ z-index:5;
   background:  #E64154;
 }
 
+#program-content #mainMenu .columns{
+  padding: 0;
+}
+
+#program-content nav section{
+  width: 100%;
+  margin: 0;
+}
 /****************************************
 Detail
 
@@ -540,6 +554,7 @@ Detail
   padding:5px 80px 5px 80px;
   font-weight: lighter;
   letter-spacing:2px;
+  margin: 0;
 
 
 }
@@ -577,6 +592,7 @@ font-family: arial;
 .da-thumbs{
   width:auto;
   height:auto;
+  margin: 0;
 }
 
 .da-thumbs li {
@@ -850,7 +866,8 @@ Horizontal Nav
 }
 
 #program_nav{
-  padding-left:0px;
+  /*padding-left:0px;*/
+  padding: 0;
 }
 
 #mainMenu{
@@ -960,7 +977,8 @@ Horizontal Nav
 #menuName{
   line-height: 50px;
   text-align: center;
-  /*width: 25px;*/
+  height: 48px;
+  background: rgba(0, 0, 0, 0.2)
 }
 
 /****************************************
@@ -1060,6 +1078,9 @@ CONTACT
   display: inline-block;
 }
 
+.contact-content #mainMenu{
+  padding-bottom: 40px;
+}
 /****************************************
 
 Media Query
@@ -1232,7 +1253,7 @@ body{
 
   #logo_wrapper{
     text-align: center;
-    margin-left:41px;
+    /*margin-left:41px;*/
    
   }
  header .left {
@@ -1307,7 +1328,9 @@ padding: 10px;
 }
 
 
-
+#mainMenu span{
+  display: none;
+}
 
 
 

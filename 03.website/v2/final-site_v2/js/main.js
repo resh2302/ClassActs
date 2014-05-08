@@ -13,37 +13,54 @@ $('#horMenuBars').click(function(){
 $('.iconImg').mouseover(function(){
    // $(this).next('.iconTxt').children('div').toggle(1000);
    if($(this).attr('id') == "r_Home"){
-   		$('#menuName').text("HOME").show();	
+   		$('#menuName').children().text("HOME").show();	
    }
    else if($(this).attr('id') == "r_IT")
    {
-   		$('#menuName').text("IT").show();	
+   		$('#menuName').children().text("IT").show();	
 
    }
    else if($(this).attr('id') == "r_media")
    {
-   		$('#menuName').text("MEDIA").show();	
+   		$('#menuName').children().text("MEDIA").show();	
    	
    }
    else if($(this).attr('id') == "r_art")
    {
-   		$('#menuName').text("ART").show();	
+   		$('#menuName').children().text("ART").show();	
    	
    }
    else if($(this).attr('id') == "r_about")
    {
-   		$('#menuName').text("ABOUT").show();	
+   		$('#menuName').children().text("ABOUT").show();	
    	
    }
    else if($(this).attr('id') == "r_contact")
    {
-   		$('#menuName').text("CONTACT").show();	
+   		$('#menuName').children().text("CONTACT").show();	
    	
    }
 });
 
 $('.iconImg').mouseout(function(){
-	$('#menuName').fadeOut();
+	$('#menuName').children().fadeOut(function(){
+    if($('#r_IT').hasClass('current'))
+    {
+        $('#menuName').children().text("GROUPS").show();
+    }
+    else if($('#r_about').hasClass('current')){
+      $('#menuName').children().text("ABOUT").show();
+    }
+    else if($('#r_Home').hasClass('current')){
+      $('#menuName').children().text("HOME").show();
+    }
+    else if($('#r_contact').hasClass('current')){
+      $('#menuName').children().text("CONTACT").show();
+    }
+  });
+
+
+  
 });
 
 //function to get querystring

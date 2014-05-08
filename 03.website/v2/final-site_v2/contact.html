@@ -45,7 +45,6 @@
         <div class="row" id="mainMenu">
         <div class="small-12 columns" id="program_nav">
                         <div id="mainHorizontal">
-                            <span id="horMenuBars"></span>
                             <div id="r_horizontalMenuWrap">
                                 <div class="menuIcon" >
                                     <a href="index.html">
@@ -89,13 +88,15 @@
                                 </div>
                                 <div class="menuIcon" >
                                     <a href="contact.html">
-                                        <div id="r_contact" class="iconImg"></div>
+                                        <div id="r_contact" class="iconImg current"></div>
                                         <!-- <div class="iconTxt r_ontacttxt">
                                             <div>CONTACT</div>
                                         </div> -->
                                     </a>
                                 </div>
-                                <div id="menuName"></div>
+                                <div id="menuName">
+                                  <span></span>
+                                </div>
                             </div>
                         </div>
                     </div> 
@@ -202,6 +203,7 @@
     </script> 
     <script>
             $(document).ready(function() {
+                $('#menuName').children().text("CONTACT").show();
                 initialize();
                 var directionDisplay, map;
                 var directionsService = new google.maps.DirectionsService();

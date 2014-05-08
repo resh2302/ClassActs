@@ -46,7 +46,6 @@
         <div class="row" id="mainMenu">
         <div class="small-12 columns" id="program_nav">
                         <div id="mainHorizontal">
-                            <span id="horMenuBars"></span>
                             <div id="r_horizontalMenuWrap">
                                 <div class="menuIcon" >
                                     <a href="index.html">
@@ -82,7 +81,7 @@
                                 </div>
                                 <div class="menuIcon" >
                                     <a href="about.html">
-                                        <div id="r_about" class="iconImg"></div>
+                                        <div id="r_about" class="iconImg current"></div>
                                         <!-- <div class="iconTxt r_abouttxt">
                                             <div>ABOUT</div>
                                         </div> -->
@@ -96,7 +95,9 @@
                                         </div> -->
                                     </a>
                                 </div>
-                                <div id="menuName"></div>
+                                <div id="menuName">
+                                  <span></span>
+                                </div>
                             </div>
                         </div>
                     </div> <!-- end program_nav -->
@@ -193,5 +194,10 @@
         }
     </script> 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#menuName').children().text("ABOUT").show();
+      });
+    </script>
 </body>
 </html>

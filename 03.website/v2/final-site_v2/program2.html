@@ -43,7 +43,6 @@
                 <div class="row" id="mainMenu">
                     <div class="large-6 small-12 columns" id="program_nav">
                         <div id="mainHorizontal">
-                            <span id="horMenuBars"></span>
                             <div id="r_horizontalMenuWrap">
                                 <div class="menuIcon" >
                                     <a href="index.html">
@@ -55,7 +54,7 @@
                                 </div>
                                 <div class="menuIcon" >
                                     <a href="program2.html?cat=it">
-                                        <div id="r_IT" class="iconImg"></div>
+                                        <div id="r_IT" class="iconImg current"></div>
                                         <!-- <div class="iconTxt r_ITtxt">
                                             <div>IT</div>
                                         </div> -->
@@ -93,28 +92,30 @@
                                         </div> -->
                                     </a>
                                 </div>
-                                <div id="menuName"></div>
+                                <div id="menuName">
+                                  <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="large-6 small-12 columns">
-                        <nav class="top-bar" data-topbar>
+                    <div class="large-6 medium-12 small-12 columns">
+                        <nav class="top-bar medium-12 columns" data-topbar>
                             <ul class="title-area">
                                 <li class="name">
                                     <h1></h1>
                                 </li>
                                 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                                <li class="toggle-topbar"><i class="fa fa-star"><span> PROGRAMS</span></i><a href="#"></a></li>
+                                <li class="toggle-topbar"><i class="fa fa-bars"><span> PROGRAMS</span></i><a href="#"></a></li>
                             </ul>
 
-                            <section class="top-bar-section">
+                            <section class="top-bar-section row">
                                 <!-- Right Nav Section -->
-                                <ul class="right portfolioFilter">
+                                <ul class="right portfolioFilter medium-12">
 
                                     <!--  <li><a href="#" data-filter="*" class="current">ALL</a></li> -->
-                                    <li><a href="#" data-filter=".it" id="r_itNav" class="current">INFORMATION TECHNOLOGY</a></li>
-                                    <li><a href="#" data-filter=".media" id="r_mediaNav" >MEDIA</a></li>
-                                    <li><a href="#" data-filter=".art" id="r_artNav">ARTS</a></li>
+                                    <li class="medium-7"><a href="#" data-filter=".it" id="r_itNav" class="current">INFORMATION TECHNOLOGY</a></li>
+                                    <li class="medium-3"><a href="#" data-filter=".media" id="r_mediaNav" >MEDIA</a></li>
+                                    <li class="medium-2"><a href="#" data-filter=".art" id="r_artNav" >ARTS</a></li>
 
 
                                 </ul>
@@ -127,7 +128,7 @@
             <div class="row">
                 <div class="portfolioContainer" id="program_info">
 
-                    <div class="it large-12">
+                    <div class="it large-12 medium-12 small-12">
 
                         <!-- <div class="program_brief medium-12 large-2 columns">
 
@@ -146,7 +147,7 @@
                         </div> --> 
                         <div id="im" class="program_des medium-12 large-6 columns">
                             <a href="details_int_media.html">
-                                <div class="crop">
+                                <div class="crop hide-for-small-only">
                                     <img src="img/im.png">
                                 </div> <!-- end crop -->
 
@@ -168,7 +169,7 @@
                         </div> 
                         <div id="sd" class="program_des medium-12 large-6 columns">
                             <a href="#">
-                                <div class="crop">
+                                <div class="crop hide-for-small-only">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -194,7 +195,7 @@
                         
                     </div> <!--  end IT row -->
 
-                    <div class="media large-12">
+                    <div class="media large-12 medium-12 small-12">
                         <!-- <div class="program_brief medium-12 large-2 columns">
 
                             <div class="label">
@@ -212,7 +213,7 @@
                         </div> --> 
                         <div id="fvt" class="program_des medium-12 large-6 columns">
                             <a href="#">
-                                <div class="crop">
+                                <div class="crop hide-for-small-only">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -236,7 +237,7 @@
                         </div> 
                         <div id="jrnl" class="program_des medium-12 large-6 columns">
                             <a href="#">
-                                <div class="crop">
+                                <div class="crop hide-for-small-only">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -272,7 +273,7 @@
                                         <b>VIEW OUR WORK HERE</b>
                                     </p>
                                 </div>
-                                <div class="crop right">
+                                <div class="crop hide-for-small-only right">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -296,7 +297,7 @@
                                         <b>VIEW OUR WORK HERE</b>
                                     </p>
                                 </div>
-                                <div class="crop right">
+                                <div class="crop hide-for-small-only right">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -318,7 +319,7 @@
                                         <b>VIEW OUR WORK HERE</b>
                                     </p>
                                 </div>
-                                <div class="crop right">
+                                <div class="crop hide-for-small-only right">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -327,7 +328,7 @@
                         </div>
                     </div> <!-- end media-->
 
-                    <div class="art large-12">
+                    <div class="art large-12 medium-12 small-12">
                         <!-- <div class="program_brief medium-12 large-2 columns">
 
                             <div class="label">
@@ -345,7 +346,7 @@
                         </div>  -->
                         <div id="adv" class="program_des medium-12 large-6 columns">
                             <a href="#">
-                                <div class="crop">
+                                <div class="crop hide-for-small-only">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -369,7 +370,7 @@
                         </div> 
                         <div id="gd" class="program_des medium-12 large-6 columns">
                             <a href="details_graphic-design.html">
-                                <div class="crop">
+                                <div class="crop hide-for-small-only">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -406,7 +407,7 @@
                                         <b>VIEW OUR WORK HERE</b>
                                     </p>
                                 </div>
-                                <div class="crop right">
+                                <div class="crop hide-for-small-only right">
                                     <img src="http://placehold.it/460x200.png/000000" alt="image">
                                 </div> <!-- end crop -->
 
@@ -448,6 +449,7 @@
         <script type="text/javascript">
 
             $(window).load(function() {
+                $('#menuName').children().text("GROUPS").show();
                 var $container = $('.portfolioContainer');
                 $container.isotope({
                     filter: '*',
